@@ -52,4 +52,31 @@ footer img{width:180px;max-width:70%}
   .hero{min-height:70vh}
   .cards,.contact-grid,.split{grid-template-columns:1fr}
   .section{padding:65px 20px}
+  .service-card {
+  cursor: pointer;
+}
+
+.gallery-hint {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.roof-gallery {
+  display: none;
+  padding: 20px;
+  text-align: center;
+}
+
+.roof-gallery.show {
+  display: block;
+}
+
+.roof-gallery img {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+  border-radius: 10px;
+  display: block;
+}
 }

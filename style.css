@@ -91,11 +91,7 @@ header {
 }
 
 .hero-logo {
-  width: 350px;
-  max-width: 85%;
-  height: auto;
-  display: block;
-  margin-bottom: 25px;
+  display: none;
 }
 
 .eyebrow {

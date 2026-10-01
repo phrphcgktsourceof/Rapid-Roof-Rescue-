@@ -394,15 +394,17 @@ footer p {
     width: 230px;
     max-width: 80vw;
   }
-
-  .menu-button {
+.menu-button {
   display: block;
+  border: 0;
+  background: transparent;
+  color: var(--blue);
+  font-size: 2rem;
+  cursor: pointer;
 }
-
 .nav {
   position: relative;
 }
-
 .nav-links {
   display: none;
   position: absolute;
@@ -417,12 +419,9 @@ footer p {
   border-top: 1px solid #d7e3ec;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-
 .nav-links.show {
   display: flex;
 }
-  }
-
   .hero {
     min-height: auto;
     padding: 65px 20px;

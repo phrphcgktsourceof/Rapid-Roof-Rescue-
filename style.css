@@ -580,18 +580,20 @@ footer p {
   h2 {
     font-size: 2rem;
   }
-}/* AREAS WE COVER */
+} 
+
+/* AREAS WE COVER */
 
 .areas-section {
 padding: 85px 22px;
 text-align: center;
-background: var(–white);
+background: var(--white);
 }
 
 .areas-intro {
 max-width: 650px;
 margin: 0 auto;
-color: var(–muted);
+color: var(--muted);
 }
 
 .areas-grid {
@@ -603,23 +605,23 @@ gap: 15px;
 }
 
 .area-card {
-background: var(–light);
+background: var(--light);
 border: 2px solid #d7e3ec;
 border-radius: 10px;
 padding: 18px 12px;
 font-weight: 700;
-color: var(–text);
+color: var(--text);
 transition: 0.2s ease;
 }
 
 .area-card:hover {
-border-color: var(–blue);
-color: var(–blue);
+border-color: var(--blue);
+color: var(--blue);
 transform: translateY(-3px);
 }
 
 .areas-note {
-color: var(–muted);
+color: var(--muted);
 margin: 25px 0 20px;
 }
 

@@ -32,8 +32,7 @@ text-decoration: none;
 /* HEADER */
 
 header {
-position: sticky;
-top: 0;
+position: relative;
 z-index: 1000;
 background: var(–white);
 border-bottom: 2px solid var(–blue);
@@ -428,13 +427,7 @@ color: var(–white);
 
 @media (max-width: 800px) {
 
-header {
-position: sticky;
-top: 0;
-}
-
 .nav {
-position: relative;
 padding: 10px 15px;
 justify-content: space-between;
 }
@@ -446,26 +439,21 @@ max-width: 65vw;
 
 .menu-button {
 display: block;
-position: relative;
-z-index: 1002;
-padding: 5px 8px;
 }
+
+/* MENU IS PART OF THE PAGE, NOT FLOATING OVER IT */
 
 .nav-links {
 display: none;
-position: absolute;
-top: 100%;
-left: 0;
-right: 0;
-z-index: 1001;
-
-background: #ffffff;
+width: 100%;
 flex-direction: column;
 align-items: stretch;
 gap: 0;
-padding: 12px 20px 20px;
+
+background: #ffffff;
+padding: 10px 20px 20px;
 border-top: 2px solid var(--blue);
-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
 
 }
 
@@ -493,13 +481,11 @@ color: var(–blue);
 .nav-links .call {
 margin-top: 12px;
 padding: 13px 10px;
-
-background: var(--orange);
+background: var(–orange);
 color: #ffffff;
 text-align: center;
 border-radius: 7px;
 border-bottom: 0;
-
 }
 
 .hero {

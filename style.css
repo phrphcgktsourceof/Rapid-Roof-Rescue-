@@ -408,6 +408,7 @@ h2 {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
   opacity: 0.95;
 }
+
 /* STAR RATING */
 .rating-field {
   margin-bottom: 20px;
@@ -418,34 +419,32 @@ h2 {
   font-weight: 700;
   margin-bottom: 8px;
 }
-.star-rating {
+.rating-options {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+}
+.rating-options label {
+  display: flex;
+  align-items: center;
   gap: 4px;
-}
-.star-rating input {
-  display: none;
-}
-.star-rating label {
-  display: inline-block;
-  width: auto;
   margin: 0;
   padding: 0;
-  color: #d7e3ec;
-  font-size: 2.4rem;
-  line-height: 1;
-  cursor: pointer;
-  transition: color 0.2s ease, transform 0.2s ease;
-}
-.star-rating label:hover,
-.star-rating label:hover ~ label,
-.star-rating input:checked ~ label {
   color: var(--orange);
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.95rem;
 }
-.star-rating label:hover {
-  transform: scale(1.1);
+.rating-options input {
+  margin: 0;
+  width: auto;
 }
+.rating-options span {
+  color: #f4b400;
+  letter-spacing: 1px;
+}
+
 /* CONTACT */
 .contact {
   text-align: center;

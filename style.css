@@ -432,8 +432,102 @@ text-align:center;
   max-width: 85%;
   height: auto;
   display: block;
-  margin: 0 auto 25px;
+  margin: 0 auto /* LIGHTER COLOURS FOR BETTER READABILITY */
+
+body {
+  background: #f4f7fa;
+  color: #17212b;
 }
-  
+
+header {
+  background: #ffffff;
+  border-bottom: 2px solid #087fc7;
+}
+
+.nav-links a {
+  color: #17212b;
+}
+
+.nav-links a:not(.call):hover {
+  color: #087fc7;
+}
+
+.hero {
+  background:
+    radial-gradient(circle at 80% 20%, rgba(8,127,199,.18), transparent 35%),
+    linear-gradient(135deg, #ffffff, #eaf3f9);
+}
+
+.hero h1 {
+  color: #087fc7;
+}
+
+.hero h2 {
+  color: #f47b20;
+}
+
+.hero p:not(.eyebrow) {
+  color: #333f4a;
+}
+
+.section {
+  background: #ffffff;
+}
+
+.section-intro,
+.cards p,
+.dark p,
+.contact > p {
+  color: #333f4a;
+}
+
+.cards article {
+  background: #ffffff;
+  color: #17212b;
+  border: 2px solid #d7e3ec;
+  box-shadow: 0 3px 12px rgba(0,0,0,.08);
+}
+
+.cards article:hover {
+  border-color: #087fc7;
+}
+
+.cards h3 {
+  color: #087fc7;
+}
+
+.cards li {
+  color: #333f4a;
+}
+
+.emergency-section {
+  background: #087fc7;
+  color: #ffffff;
+}
+
+.emergency-section p {
+  color: #ffffff;
+}
+
+.contact-grid a,
+.contact-grid div {
+  background: #ffffff;
+  color: #17212b;
+  border: 2px solid #d7e3ec;
+  box-shadow: 0 3px 12px rgba(0,0,0,.08);
+}
+
+.contact-grid strong {
+  color: #17212b;
+}
+
+footer {
+  background: #17212b;
+  color: #ffffff;
+}
+
+footer p {
+  color: #ffffff;
+}
 
 }

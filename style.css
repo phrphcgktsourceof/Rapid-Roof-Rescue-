@@ -277,6 +277,57 @@ margin-top: 15px;
 margin-bottom: 5px;
 }
 
+/* WHY CHOOSE US */
+
+.why-us {
+padding: 85px 22px;
+text-align: center;
+background: var(–light);
+}
+
+.why-intro {
+max-width: 650px;
+margin: 0 auto;
+color: var(–muted);
+}
+
+.why-grid {
+max-width: 1050px;
+margin: 40px auto 0;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 18px;
+}
+
+.why-card {
+background: var(–white);
+border: 2px solid #d7e3ec;
+border-radius: 12px;
+padding: 25px 18px;
+box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.why-icon {
+font-size: 2.2rem;
+margin-bottom: 10px;
+}
+
+.why-card h3 {
+margin: 5px 0 8px;
+color: var(–blue);
+font-size: 1.1rem;
+}
+
+.why-card p {
+margin: 0;
+color: var(–muted);
+font-size: 0.95rem;
+}
+
+.why-button {
+margin-top: 35px;
+}
+
 /* EMERGENCY SECTION */
 
 .emergency-section {
@@ -441,20 +492,16 @@ max-width: 65vw;
 display: block;
 }
 
-/* MENU IS PART OF THE PAGE, NOT FLOATING OVER IT */
-
 .nav-links {
 display: none;
 width: 100%;
 flex-direction: column;
 align-items: stretch;
 gap: 0;
-
 background: #ffffff;
 padding: 10px 20px 20px;
-border-top: 2px solid var(--blue);
+border-top: 2px solid var(–blue);
 box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
-
 }
 
 .nav-links.show {
@@ -465,13 +512,11 @@ display: flex;
 display: block;
 width: 100%;
 padding: 16px 10px;
-
 background: #ffffff;
-color: var(--text);
+color: var(–text);
 font-size: 1.05rem;
 font-weight: 700;
 border-bottom: 1px solid #d7e3ec;
-
 }
 
 .nav-links a:not(.call):hover {
@@ -549,75 +594,6 @@ gap: 15px;
 padding: 23px;
 }
 
-.emergency-section {
-padding: 60px 20px;
-}
-
-.contact-grid {
-gap: 12px;
-}
-
-h1 {
-font-size: clamp(2.8rem, 15vw, 4.5rem);
-}
-
-h2 {
-font-size: 2rem;
-}/* WHY CHOOSE US */
-
-.why-us {
-padding: 85px 22px;
-text-align: center;
-background: var(–light);
-}
-
-.why-intro {
-max-width: 650px;
-margin: 0 auto;
-color: var(–muted);
-}
-
-.why-grid {
-max-width: 1050px;
-margin: 40px auto 0;
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 18px;
-}
-
-.why-card {
-background: var(–white);
-border: 2px solid #d7e3ec;
-border-radius: 12px;
-padding: 25px 18px;
-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
-}
-
-.why-icon {
-font-size: 2.2rem;
-margin-bottom: 10px;
-}
-
-.why-card h3 {
-margin: 5px 0 8px;
-color: var(–blue);
-font-size: 1.1rem;
-}
-
-.why-card p {
-margin: 0;
-color: var(–muted);
-font-size: 0.95rem;
-}
-
-.why-button {
-margin-top: 35px;
-}
-
-/* MOBILE WHY CHOOSE US */
-
-@media (max-width: 800px) {
-
 .why-us {
 padding: 60px 20px;
 }
@@ -632,5 +608,32 @@ margin-top: 30px;
 padding: 22px;
 }
 
+.emergency-section {
+padding: 60px 20px;
+}
+
+.contact-grid {
+gap: 12px;
+}
+
+h1 {
+font-size: clamp(2.8rem, 15vw, 4.5rem);
+}
+
+h2 {
+font-size: 2rem;
 }
 }
+
+### Now do this
+1. Open **`style.css`** on GitHub.
+2. Delete **everything** currently in it.
+3. Paste the complete CSS above.
+4. Press **Commit changes**.
+5. Wait about 30–60 seconds.
+6. Open your website and scroll down underneath **Our Services**.
+You should then see:
+**WHY RAPID ROOF RESCUE?**  
+### Why Choose Us?
+with the four cards underneath.
+Your `index.html` **doesn't need changing** for this fix.

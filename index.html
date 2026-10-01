@@ -205,118 +205,26 @@
   </div>
 </section>
 <!-- CUSTOMER REVIEWS -->
-.reviews {
-text-align: center;
-background: #ffffff;
-padding-top: 85px;
-padding-bottom: 90px;
-}
-
-.reviews .eyebrow {
-margin-bottom: 10px;
-}
-
-.reviews h2 {
-margin-bottom: 12px;
-}
-
-.reviews > p:not(.eyebrow) {
-max-width: 600px;
-margin: 0 auto;
-color: var(–muted);
-}
-
-.reviews form {
-max-width: 650px;
-margin: 35px auto 0;
-padding: 32px;
-text-align: left;
-background: #f4f7fa;
-border: 2px solid #d7e3ec;
-border-radius: 14px;
-box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
-}
-
-.reviews label {
-display: block;
-color: var(–text);
-font-weight: 800;
-margin-bottom: 20px;
-}
-
-.reviews input,
-.reviews textarea {
-display: block;
-width: 100%;
-margin-top: 8px;
-padding: 14px;
-border-radius: 8px;
-border: 2px solid #d7e3ec;
-background: #ffffff;
-color: var(–text);
-font-family: Arial, Helvetica, sans-serif;
-font-size: 1rem;
-outline: none;
-}
-
-.reviews input:focus,
-.reviews textarea:focus {
-border-color: var(–blue);
-}
-
-.reviews textarea {
-min-height: 130px;
-resize: vertical;
-}
-
-.reviews button {
-width: 100%;
-border: 0;
-cursor: pointer;
-background: var(–orange);
-color: #ffffff;
-padding: 15px 20px;
-border-radius: 8px;
-font-weight: 800;
-font-size: 1rem;
-transition: 0.2s ease;
-}
-
-.reviews button:hover {
-transform: translateY(-2px);
-opacity: 0.92;
-}
-
-/* MOBILE REVIEWS */
-
-@media (max-width: 800px) {
-
-.reviews {
-padding-top: 60px;
-padding-bottom: 65px;
-}
-
-.reviews form {
-padding: 22px;
-margin-top: 28px;
-}
-
-.reviews input,
-.reviews textarea {
-font-size: 16px;
-}
-}
-
-### What to do
-1. Open **`style.css`**.
-2. Find:
-   **`/* REVIEWS */`**
-3. Delete the old Reviews section **from `/* REVIEWS */` down to just before `/* CONTACT */`**.
-4. Paste the new code above.
-5. **Commit changes**.
-6. Wait around 30–60 seconds.
-7. Refresh your website and scroll down to **Customer Reviews**.
-It should now have a clean card around the form, better spacing, larger fields and a full-width professional **Leave a Review** button. 📱✨
+<section id="reviews" class="section reviews">
+  <p class="eyebrow">CUSTOMER REVIEWS</p>
+  <h2>Leave Us a Review</h2>
+  <p>
+    We'd love to hear about your experience with Rapid Roof Rescue.
+  </p>
+  <form action="https://formspree.io/f/mqpawypw" method="POST">
+<label>
+  Your name:
+  <input type="text" name="name" required>
+</label>
+<label>
+  Your review:
+  <textarea name="review" rows="5" required></textarea>
+</label>
+<button type="submit">
+  Leave a Review
+</button>
+  </form>
+</section>
 <!-- CONTACT -->
 <section id="contact" class="section contact">
   <p class="eyebrow">GET IN TOUCH</p>

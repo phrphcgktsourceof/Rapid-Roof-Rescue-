@@ -11,22 +11,22 @@
 <body>
 <header>
   <nav class="nav">
-  <a href="#home" class="brand">
-    <img src="logo.jpeg" alt="Rapid Roof Rescue logo">
-  </a>
-    <button class="menu-button" id="menuButton" aria-label="Open menu">
-  ☰
-</button>
-  <div class="nav-links" id="mobileMenu">
-    <a href="#services" >Services</a>
-    <a href="#about" >About</a>
-    <a href="#reviews" >Reviews</a>
-    <a href="#contact" >Contact</a>
-    <a class="call" href="tel:07873149114">
-      Call 07873 149114
+    <a href="#home" class="brand">
+      <img src="logo.jpeg" alt="Rapid Roof Rescue logo">
     </a>
-  </div>
-</nav>
+    <button class="menu-button" id="menuButton" aria-label="Open menu">
+      ☰
+    </button>
+    <div class="nav-links" id="mobileMenu">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a class="call" href="tel:07873149114">
+        Call 07873 149114
+      </a>
+    </div>
+  </nav>
 </header>
 <main>
 <!-- HOME -->
@@ -221,7 +221,8 @@
     © 2026 Rapid Roof Rescue. Roofing & Gutter Repair Specialist.
   </p>
 </footer>
-  <script>
+<!-- MOBILE MENU -->
+<script>
 document.getElementById("menuButton").addEventListener("click", function () {
   document.getElementById("mobileMenu").classList.toggle("show");
 });

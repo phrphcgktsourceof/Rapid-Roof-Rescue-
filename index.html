@@ -234,7 +234,8 @@
     </div>
   </div>
 </section>
-<!-- CUSTOMER REVIEWS -->
+
+ <!-- CUSTOMER REVIEWS -->
 <section id="reviews" class="section reviews">
   <p class="eyebrow">
     CUSTOMER REVIEWS
@@ -251,30 +252,39 @@
       <input type="text" name="name" required>
     </label>
     <div class="rating-field">
-  <span class="rating-title">Your rating:</span>
-  <div class="rating-options">
+      <span class="rating-title">Your rating:</span>
+      <div class="rating-options">
+        <label>
+          <input type="radio" name="rating" value="1" required>
+          <span>★</span>
+        </label>
+        <label>
+          <input type="radio" name="rating" value="2">
+          <span>★★</span>
+        </label>
+        <label>
+          <input type="radio" name="rating" value="3">
+          <span>★★★</span>
+        </label>
+        <label>
+          <input type="radio" name="rating" value="4">
+          <span>★★★★</span>
+        </label>
+        <label>
+          <input type="radio" name="rating" value="5">
+          <span>★★★★★</span>
+        </label>
+      </div>
+    </div>
     <label>
-      <input type="radio" name="rating" value="1" required>
-      <span>★</span>
+      Your review:
+      <textarea name="review" rows="5" required></textarea>
     </label>
-    <label>
-      <input type="radio" name="rating" value="2">
-      <span>★★</span>
-    </label>
-    <label>
-      <input type="radio" name="rating" value="3">
-      <span>★★★</span>
-    </label>
-    <label>
-      <input type="radio" name="rating" value="4">
-      <span>★★★★</span>
-    </label>
-    <label>
-      <input type="radio" name="rating" value="5">
-      <span>★★★★★</span>
-    </label>
-  </div>
-</div>
+    <button type="submit">
+      Leave a Review
+    </button>
+  </form>
+</section> 
 
 <!-- FREE QUOTE -->
 <section class="quote-section">

@@ -408,71 +408,83 @@ margin-top: 35px;
   color: var(--muted);
 }
 /* CUSTOMER REVIEWS */
+
 .reviews {
-  text-align: center;
-  background: #f4f7fa;
+text-align: center;
+background: #f4f7fa;
 }
+
 .reviews > p:not(.eyebrow) {
-  max-width: 650px;
-  margin: 0 auto;
-  color: var(--muted);
+max-width: 650px;
+margin: 0 auto;
+color: var(–muted);
 }
+
 .reviews form {
-  max-width: 650px;
-  margin: 35px auto 0;
-  padding: 30px;
-  text-align: left;
-  background: var(--white);
-  border: 2px solid #d7e3ec;
-  border-radius: 14px;
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+max-width: 650px;
+margin: 35px auto 0;
+padding: 35px;
+text-align: left;
+background: var(–white);
+border: 2px solid #d7e3ec;
+border-radius: 16px;
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
+
 .reviews label {
-  display: block;
-  color: var(--text);
-  font-weight: 700;
-  margin-bottom: 20px;
+display: block;
+color: var(–text);
+font-weight: 700;
+margin-bottom: 20px;
 }
+
 .reviews input,
 .reviews textarea {
-  display: block;
-  width: 100%;
-  margin-top: 8px;
-  padding: 14px;
-  border-radius: 8px;
-  border: 2px solid #d7e3ec;
-  background: var(--white);
-  color: var(--text);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  outline: none;
+display: block;
+width: 100%;
+margin-top: 8px;
+padding: 14px;
+border-radius: 8px;
+border: 2px solid #d7e3ec;
+background: var(–white);
+color: var(–text);
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1rem;
+outline: none;
+transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
+
 .reviews input:focus,
 .reviews textarea:focus {
-  border-color: var(--blue);
+border-color: var(–blue);
+box-shadow: 0 0 0 3px rgba(8, 127, 199, 0.12);
 }
+
 .reviews textarea {
-  min-height: 140px;
-  resize: vertical;
+min-height: 150px;
+resize: vertical;
 }
+
 .reviews button {
-  width: 100%;
-  border: 0;
-  cursor: pointer;
-  background: var(--orange);
-  color: var(--white);
-  padding: 15px 20px;
-  border-radius: 9px;
-  font-weight: 800;
-  font-size: 1rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease,
-    opacity 0.2s ease;
+width: 100%;
+border: 0;
+cursor: pointer;
+background: var(–orange);
+color: var(–white);
+padding: 15px 20px;
+border-radius: 9px;
+font-weight: 800;
+font-size: 1rem;
+transition: transform 0.2s ease, box-shadow 0.2s ease,
+opacity 0.2s ease;
 }
+
 .reviews button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  opacity: 0.95;
+transform: translateY(-2px);
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+opacity: 0.95;
 }
+
 /* STAR RATING */
 .rating-field {
   margin-bottom: 20px;

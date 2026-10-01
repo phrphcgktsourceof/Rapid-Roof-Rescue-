@@ -657,14 +657,14 @@ margin-bottom: 8px;
 }
 
 .quote-section h2 {
-color: var(–text);
+color: var(--text);
 margin-bottom: 15px;
 }
 
 .quote-section > p:not(.eyebrow) {
 max-width: 650px;
 margin: 0 auto;
-color: var(–muted);
+color: var(--muted);
 }
 
 .quote-buttons {

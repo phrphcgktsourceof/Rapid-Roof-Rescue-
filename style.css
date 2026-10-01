@@ -52,6 +52,7 @@ header {
 .brand img {
   width: 280px;
   max-width: 70vw;
+  height: auto;
   display: block;
 }
 
@@ -88,10 +89,6 @@ header {
   max-width: 1150px;
   width: 100%;
   margin: auto;
-}
-
-.hero-logo {
-  display: none;
 }
 
 .eyebrow {
@@ -191,7 +188,7 @@ h2 {
   max-width: 700px;
 }
 
-/* SERVICES */
+/* SERVICE CARDS */
 
 .cards {
   display: grid;
@@ -261,7 +258,7 @@ h2 {
   margin-top: 25px;
 }
 
-/* CUSTOMER REVIEWS */
+/* REVIEWS */
 
 .reviews {
   text-align: center;
@@ -380,11 +377,6 @@ footer {
   color: #ffffff;
 }
 
-footer img {
-  width: 180px;
-  max-width: 70%;
-}
-
 footer p {
   color: #ffffff;
 }
@@ -394,7 +386,13 @@ footer p {
 @media (max-width: 800px) {
 
   .nav {
-    align-items: flex-start;
+    padding: 10px 15px;
+    justify-content: center;
+  }
+
+  .brand img {
+    width: 230px;
+    max-width: 80vw;
   }
 
   .nav-links {
@@ -402,27 +400,26 @@ footer p {
   }
 
   .hero {
-    min-height: 70vh;
-  }
-
-  .hero-logo {
-    width: 300px;
-    max-width: 85%;
-  }
-
-  .cards,
-  .contact-grid,
-  .split {
-    grid-template-columns: 1fr;
-  }
-
-  .section {
+    min-height: auto;
     padding: 65px 20px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero p:not(.eyebrow) {
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .emergency-banner {
     width: 100%;
     max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 
   .buttons {
@@ -432,5 +429,40 @@ footer p {
 
   .button {
     text-align: center;
+    width: 100%;
+  }
+
+  .section {
+    padding: 60px 20px;
+  }
+
+  .cards,
+  .contact-grid,
+  .split {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    gap: 15px;
+  }
+
+  .cards article {
+    padding: 23px;
+  }
+
+  .emergency-section {
+    padding: 60px 20px;
+  }
+
+  .contact-grid {
+    gap: 12px;
+  }
+
+  h1 {
+    font-size: clamp(2.8rem, 15vw, 4.5rem);
+  }
+
+  h2 {
+    font-size: 2rem;
   }
 }

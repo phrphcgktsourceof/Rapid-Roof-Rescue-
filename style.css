@@ -191,15 +191,6 @@ h2 {
   transform: translateY(-3px);
   box-shadow: 0 7px 18px rgba(0, 0, 0, 0.15);
 }
-.hero .primary {
-  background: var(--orange);
-  color: var(--white);
-}
-.hero .secondary {
-  border: 2px solid var(--blue);
-  color: var(--blue);
-  background: var(--white);
-}
 /* TRUST POINTS */
 .trust-points {
   display: grid;
@@ -215,9 +206,8 @@ h2 {
   padding: 20px 14px;
   text-align: center;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-  position: relative;
-  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
 }
 .trust-points div::before {
   content: "✓";
@@ -249,7 +239,6 @@ h2 {
   font-size: 0.85rem;
   line-height: 1.4;
 }
-}
 /* SECTIONS */
 .section {
   max-width: 1150px;
@@ -274,7 +263,8 @@ h2 {
   border-radius: 14px;
   padding: 30px 28px;
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
   position: relative;
   overflow: hidden;
 }
@@ -445,7 +435,8 @@ h2 {
   border-radius: 9px;
   font-weight: 800;
   font-size: 1rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    opacity 0.2s ease;
 }
 .reviews button:hover {
   transform: translateY(-2px);
@@ -519,7 +510,8 @@ h2 {
   border-radius: 14px;
   padding: 25px;
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
 }
 .contact-grid a:hover {
   transform: translateY(-5px);

@@ -641,10 +641,15 @@ padding: 16px 10px;
 }/* FREE QUOTE */
 
 .quote-section {
-padding: 80px 22px;
-text-align: center;
-background: #e8f3f9;
-border-top: 1px solid #d7e3ec;
+  padding: 90px 22px;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    #e8f3f9 0%,
+    #f7fbfd 100%
+  );
+  border-top: 1px solid #d7e3ec;
+  border-bottom: 1px solid #d7e3ec;
 }
 
 .quote-section .eyebrow {

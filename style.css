@@ -643,4 +643,65 @@ margin-top: 30px;
 padding: 16px 10px;
 }
 
+}/* FREE QUOTE */
+
+.quote-section {
+padding: 80px 22px;
+text-align: center;
+background: #e8f3f9;
+border-top: 1px solid #d7e3ec;
+}
+
+.quote-section .eyebrow {
+margin-bottom: 8px;
+}
+
+.quote-section h2 {
+color: var(–text);
+margin-bottom: 15px;
+}
+
+.quote-section > p:not(.eyebrow) {
+max-width: 650px;
+margin: 0 auto;
+color: var(–muted);
+}
+
+.quote-buttons {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 12px;
+margin-top: 30px;
+}
+
+.quote-buttons .button {
+min-width: 190px;
+text-align: center;
+transition: 0.2s ease;
+}
+
+.quote-buttons .button:hover {
+transform: translateY(-2px);
+}
+
+/* FREE QUOTE - MOBILE */
+
+@media (max-width: 800px) {
+
+.quote-section {
+padding: 60px 20px;
+}
+
+.quote-buttons {
+flex-direction: column;
+align-items: stretch;
+max-width: 400px;
+margin: 30px auto 0;
+}
+
+.quote-buttons .button {
+width: 100%;
+}
+
 }

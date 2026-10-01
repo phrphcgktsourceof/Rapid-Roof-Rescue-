@@ -573,5 +573,40 @@ font-size: clamp(2.8rem, 15vw, 4.5rem);
 
 h2 {
 font-size: 2rem;
+}@media (max-width: 800px) {
+
+.nav {
+position: relative;
+}
+
+.nav-links {
+background: #ffffff;
+padding: 15px 20px 25px;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+border-top: 2px solid #087fc7;
+}
+
+.nav-links a {
+display: block;
+background: #ffffff;
+color: #17212b;
+padding: 16px 10px;
+font-size: 1.05rem;
+border-bottom: 1px solid #d7e3ec;
+}
+
+.nav-links a:hover {
+color: #087fc7;
+}
+
+.nav-links .call {
+background: #f47b20;
+color: #ffffff;
+margin-top: 12px;
+border-radius: 7px;
+text-align: center;
+border-bottom: 0;
+}
+
 }
 }

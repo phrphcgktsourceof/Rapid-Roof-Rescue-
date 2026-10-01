@@ -49,8 +49,9 @@ gap:20px;
 }
 
 .brand img{
-width:190px;
-display:block;
+  width:280px;
+  max-width:70vw;
+  display:block;
 }
 
 .nav-links{

@@ -70,19 +70,33 @@ header {
   color: var(--blue);
   font-size: 2rem;
   cursor: pointer;
-}
-/* HERO */
+}/* HERO */
 .hero {
   min-height: 78vh;
   display: flex;
   align-items: center;
-  padding: 80px 22px;
-  background: linear-gradient(135deg, #ffffff, #e8f3f9);
+  padding: 90px 22px;
+  background:
+    linear-gradient(135deg, #ffffff 0%, #eef7fb 55%, #dceff7 100%);
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  right: -150px;
+  top: -150px;
+  border-radius: 50%;
+  background: rgba(8, 127, 199, 0.08);
 }
 .hero-content {
   max-width: 1150px;
   width: 100%;
   margin: auto;
+  position: relative;
+  z-index: 1;
 }
 .eyebrow {
   color: var(--blue);
@@ -95,6 +109,7 @@ h1 {
   line-height: 0.95;
   margin: 12px 0;
   color: var(--blue);
+  letter-spacing: -2px;
 }
 h2 {
   font-size: clamp(1.8rem, 4vw, 3rem);
@@ -105,11 +120,78 @@ h2 {
 .hero h2 {
   color: var(--orange);
   font-size: clamp(1.2rem, 2.5vw, 2rem);
+  margin-bottom: 18px;
 }
 .hero p:not(.eyebrow) {
   max-width: 650px;
   color: var(--muted);
   font-size: 1.15rem;
+}
+/* EMERGENCY BANNER */
+.emergency-banner {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin-top: 28px;
+  padding: 18px 25px;
+  border: 2px solid var(--orange);
+  border-radius: 10px;
+  background: #fff4ec;
+  box-shadow: 0 5px 18px rgba(244, 123, 32, 0.08);
+}
+.emergency-banner strong {
+  color: var(--orange);
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+.emergency-banner span {
+  color: var(--text);
+  font-weight: 700;
+}
+/* HERO BUTTONS */
+.hero .buttons {
+  margin-top: 28px;
+}
+.hero .button {
+  min-width: 155px;
+  text-align: center;
+  transition: 0.2s ease;
+}
+.hero .button:hover {
+  transform: translateY(-2px);
+}
+/* TRUST POINTS */
+.trust-points {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 750px;
+  margin-top: 40px;
+}
+.trust-points div {
+  background: var(--white);
+  border: 2px solid #d7e3ec;
+  border-radius: 10px;
+  padding: 18px 12px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transition: 0.2s ease;
+}
+.trust-points div:hover {
+  transform: translateY(-3px);
+  border-color: var(--blue);
+}
+.trust-points strong {
+  display: block;
+  color: var(--blue);
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+.trust-points span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
 }
 /* EMERGENCY BANNER */
 .emergency-banner {

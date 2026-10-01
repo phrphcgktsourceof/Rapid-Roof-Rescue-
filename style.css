@@ -427,5 +427,13 @@ align-items:stretch;
 .button{
 text-align:center;
 }
+  .hero-logo {
+  width: 350px;
+  max-width: 85%;
+  height: auto;
+  display: block;
+  margin: 0 auto 25px;
+}
+  
 
 }

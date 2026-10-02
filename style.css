@@ -18,27 +18,20 @@
   padding: 0;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
-
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: var(--light);
   color: var(--text);
   line-height: 1.6;
-
-  /* Keeps the fixed header from covering the top of the page */
-  padding-top: 90px;
 }
-
 
 img {
   max-width: 100%;
 }
-
 
 a {
   color: inherit;
@@ -52,15 +45,11 @@ header {
   background: var(--white);
   border-bottom: 3px solid var(--orange);
 
-  /* STAYS AT THE TOP WHEN SCROLLING */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  /* Header scrolls away normally */
+  position: relative;
 
-  z-index: 10000;
+  z-index: 1000;
 }
-
 
 .nav {
   max-width: 1200px;
@@ -73,20 +62,17 @@ header {
   gap: 20px;
 }
 
-
 .brand img {
   display: block;
   width: 180px;
   height: auto;
 }
 
-
 .nav-links {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
 
 .nav-links a {
   padding: 10px 14px;
@@ -95,38 +81,29 @@ header {
   transition: 0.2s ease;
 }
 
-
 .nav-links a:hover {
   color: var(--blue);
   background: var(--light);
 }
-
 
 .nav-links .call {
   background: var(--orange);
   color: var(--white);
 }
 
-
 .nav-links .call:hover {
   background: var(--blue);
   color: var(--white);
 }
 
-
 .menu-button {
   display: none;
-
   border: none;
   background: var(--blue);
   color: var(--white);
-
   font-size: 24px;
-
   border-radius: 8px;
-
   padding: 8px 12px;
-
   cursor: pointer;
 }
 
@@ -141,86 +118,63 @@ header {
     );
 
   color: var(--white);
-
   padding: 90px 20px 70px;
-
   text-align: center;
 }
-
 
 .hero-content {
   max-width: 950px;
   margin: auto;
 }
 
-
 .eyebrow {
   color: var(--orange);
-
   font-weight: 800;
   font-size: 13px;
-
   letter-spacing: 1.5px;
-
   margin-bottom: 10px;
 }
-
 
 .hero .eyebrow {
   color: var(--white);
   opacity: 0.9;
 }
 
-
 .hero h1 {
   font-size: clamp(42px, 7vw, 72px);
-
   line-height: 1.05;
-
   margin-bottom: 12px;
 }
 
-
 .hero h2 {
   font-size: clamp(22px, 4vw, 34px);
-
   margin-bottom: 20px;
 }
 
-
 .hero p {
   max-width: 720px;
-
   margin: 0 auto 25px;
-
   font-size: 18px;
 }
 
-
 .emergency-banner {
   display: inline-flex;
-
   flex-direction: column;
-
   gap: 2px;
 
   background: var(--orange);
 
   padding: 14px 22px;
-
   border-radius: 10px;
-
   margin-bottom: 25px;
 
   box-shadow:
     0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
-
 .emergency-banner strong {
   font-size: 16px;
 }
-
 
 .emergency-banner span {
   font-size: 13px;
@@ -232,15 +186,11 @@ header {
 .buttons,
 .quote-buttons {
   display: flex;
-
   justify-content: center;
   align-items: center;
-
   flex-wrap: wrap;
-
   gap: 12px;
 }
-
 
 .button {
   display: inline-block;
@@ -256,7 +206,6 @@ header {
   transition: 0.2s ease;
 }
 
-
 .button:hover {
   transform: translateY(-2px);
 }
@@ -269,21 +218,18 @@ header {
   color: var(--white);
 }
 
-
 .button.primary:hover {
   background: #d96514;
 }
 
 
-/* CALL NOW ON BLUE HERO = WHITE */
+/* CALL NOW BUTTON IN HERO = WHITE */
 
 .hero .button.primary {
   background: var(--white);
   color: var(--blue);
-
   border-color: var(--white);
 }
-
 
 .hero .button.primary:hover {
   background: var(--light);
@@ -295,12 +241,9 @@ header {
 
 .button.secondary {
   background: var(--white);
-
   color: var(--blue);
-
   border-color: var(--white);
 }
-
 
 .button.secondary:hover {
   background: var(--light);
@@ -311,24 +254,18 @@ header {
 
 .trust-points {
   max-width: 850px;
-
   margin: 45px auto 0;
 
   display: grid;
-
   grid-template-columns: repeat(3, 1fr);
-
   gap: 15px;
 }
 
-
 .trust-points div {
   background: var(--white);
-
   color: var(--text);
 
   border: 2px solid var(--border);
-
   border-radius: 14px;
 
   padding: 18px 12px;
@@ -337,23 +274,18 @@ header {
     0 5px 18px rgba(0, 0, 0, 0.08);
 }
 
-
 .trust-points strong,
 .trust-points span {
   display: block;
 }
 
-
 .trust-points strong {
   color: var(--blue);
-
   font-size: 18px;
 }
 
-
 .trust-points span {
   font-size: 13px;
-
   color: var(--muted);
 }
 
@@ -362,12 +294,9 @@ header {
 
 .section {
   max-width: 1200px;
-
   margin: auto;
-
   padding: 80px 20px;
 }
-
 
 .section h2,
 .why-us h2,
@@ -375,23 +304,17 @@ header {
 .emergency-section h2,
 .quote-section h2 {
   font-size: clamp(30px, 5vw, 44px);
-
   line-height: 1.15;
-
   margin-bottom: 15px;
 }
-
 
 .section-intro,
 .why-intro,
 .areas-intro {
   max-width: 700px;
-
   margin: 0 auto 35px;
-
   color: var(--muted);
 }
-
 
 .section > h2,
 .section > .eyebrow,
@@ -404,22 +327,17 @@ header {
 
 .cards {
   display: grid;
-
   grid-template-columns: repeat(3, 1fr);
-
   gap: 22px;
 }
 
-
 .service-card {
   position: relative;
-
   overflow: hidden;
 
   background: var(--white);
 
   border: 2px solid var(--border);
-
   border-radius: 14px;
 
   padding: 30px 24px;
@@ -433,22 +351,18 @@ header {
     border-color 0.25s ease;
 }
 
-
 .service-card::before {
   content: "";
 
   position: absolute;
-
   top: 0;
   left: 0;
 
   width: 100%;
-
   height: 4px;
 
   background: var(--orange);
 }
-
 
 .service-card:hover {
   transform: translateY(-5px);
@@ -459,33 +373,24 @@ header {
     0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
-
 .icon {
   font-size: 38px;
-
   margin-bottom: 12px;
 }
 
-
 .service-card h3 {
   color: var(--blue);
-
   margin-bottom: 8px;
-
   font-size: 21px;
 }
 
-
 .service-card p {
   color: var(--muted);
-
   margin-bottom: 18px;
 }
 
-
 .service-link {
   color: var(--orange);
-
   font-weight: 800;
 }
 
@@ -494,35 +399,26 @@ header {
 
 .why-us {
   background: var(--white);
-
   text-align: center;
-
   padding: 80px 20px;
 }
 
-
 .why-grid {
   max-width: 1100px;
-
   margin: 40px auto;
 
   display: grid;
-
   grid-template-columns: repeat(4, 1fr);
-
   gap: 20px;
 }
 
-
 .why-card {
   position: relative;
-
   overflow: hidden;
 
   background: var(--white);
 
   border: 2px solid var(--border);
-
   border-radius: 14px;
 
   padding: 30px 20px;
@@ -533,22 +429,18 @@ header {
   transition: 0.25s ease;
 }
 
-
 .why-card::before {
   content: "";
 
   position: absolute;
-
   top: 0;
   left: 0;
 
   width: 100%;
-
   height: 4px;
 
   background: var(--orange);
 }
-
 
 .why-card:hover {
   transform: translateY(-5px);
@@ -559,41 +451,32 @@ header {
     0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
-
 .why-icon {
   font-size: 35px;
-
   margin-bottom: 10px;
 }
 
-
 .why-card h3 {
   color: var(--blue);
-
   margin-bottom: 8px;
 }
-
 
 .why-card p {
   color: var(--muted);
 }
-
 
 .why-button {
   margin-top: 10px;
 }
 
 
-/* AREAS */
+/* AREAS WE COVER */
 
 .areas-section {
   background: var(--light);
-
   text-align: center;
-
   padding: 80px 20px;
 }
-
 
 .areas-grid {
   max-width: 900px;
@@ -608,32 +491,29 @@ header {
 }
 
 
+/* SMALL ORIGINAL-STYLE AREA BOXES */
+
 .area-card {
   position: relative;
-
   overflow: hidden;
 
-  background: var(--white);
+  background: var(--light);
 
   border: 2px solid var(--border);
 
-  border-radius: 14px;
+  border-radius: 10px;
 
-  padding: 20px 12px;
+  padding: 18px 12px;
 
   font-weight: 700;
 
   color: var(--text);
 
-  box-shadow:
-    0 5px 18px rgba(0, 0, 0, 0.08);
-
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    border-color 0.25s ease;
+  transition: 0.2s ease;
 }
 
+
+/* ORANGE LINE ACROSS TOP */
 
 .area-card::before {
   content: "";
@@ -652,18 +532,16 @@ header {
 
 
 .area-card:hover {
-  transform: translateY(-5px);
-
   border-color: var(--blue);
 
-  box-shadow:
-    0 10px 25px rgba(0, 0, 0, 0.12);
+  color: var(--blue);
+
+  transform: translateY(-3px);
 }
 
 
 .areas-note {
   color: var(--muted);
-
   margin-bottom: 20px;
 }
 
@@ -680,15 +558,12 @@ header {
   padding: 75px 20px;
 }
 
-
 .emergency-section .eyebrow {
   color: var(--white);
 }
 
-
 .emergency-section p {
   max-width: 700px;
-
   margin: 0 auto 25px;
 }
 
@@ -697,12 +572,9 @@ header {
 
 .dark {
   background: var(--dark);
-
   color: var(--white);
-
   max-width: none;
 }
-
 
 .split {
   max-width: 1100px;
@@ -718,15 +590,12 @@ header {
   align-items: center;
 }
 
-
 .dark h2 {
   margin-bottom: 20px;
 }
 
-
 .dark p {
   color: #dce6ed;
-
   margin-bottom: 18px;
 }
 
@@ -736,7 +605,6 @@ header {
 .reviews {
   text-align: center;
 }
-
 
 .reviews form {
   max-width: 650px;
@@ -757,7 +625,6 @@ header {
   text-align: left;
 }
 
-
 .reviews form > label {
   display: block;
 
@@ -765,7 +632,6 @@ header {
 
   margin-bottom: 20px;
 }
-
 
 .reviews input[type="text"],
 .reviews textarea {
@@ -782,19 +648,15 @@ header {
   font: inherit;
 }
 
-
 .reviews input[type="text"]:focus,
 .reviews textarea:focus {
   outline: none;
-
   border-color: var(--blue);
 }
-
 
 .rating-field {
   margin-bottom: 20px;
 }
-
 
 .rating-title {
   display: block;
@@ -804,7 +666,6 @@ header {
   margin-bottom: 10px;
 }
 
-
 .rating-options {
   display: flex;
 
@@ -812,7 +673,6 @@ header {
 
   flex-wrap: wrap;
 }
-
 
 .rating-options label {
   display: flex;
@@ -832,16 +692,13 @@ header {
   cursor: pointer;
 }
 
-
 .rating-star {
   color: var(--orange);
 }
 
-
 .rating-number {
   font-weight: 700;
 }
-
 
 .reviews button {
   width: 100%;
@@ -863,7 +720,6 @@ header {
   cursor: pointer;
 }
 
-
 .reviews button:hover {
   background: #d96514;
 }
@@ -883,7 +739,6 @@ header {
   border-bottom: 1px solid var(--border);
 }
 
-
 .quote-section > p:not(.eyebrow) {
   max-width: 700px;
 
@@ -899,7 +754,6 @@ header {
   text-align: center;
 }
 
-
 .contact > p:not(.eyebrow) {
   max-width: 700px;
 
@@ -907,7 +761,6 @@ header {
 
   color: var(--muted);
 }
-
 
 .contact-grid {
   max-width: 900px;
@@ -920,7 +773,6 @@ header {
 
   gap: 18px;
 }
-
 
 .contact-grid > a,
 .contact-grid > div {
@@ -940,7 +792,6 @@ header {
     0 5px 18px rgba(0, 0, 0, 0.08);
 }
 
-
 .contact-grid > a::before,
 .contact-grid > div::before {
   content: "";
@@ -957,17 +808,14 @@ header {
   background: var(--orange);
 }
 
-
 .contact-grid > a:hover {
   border-color: var(--blue);
 }
-
 
 .contact-grid span,
 .contact-grid strong {
   display: block;
 }
-
 
 .contact-grid span {
   color: var(--orange);
@@ -981,10 +829,8 @@ header {
   margin-bottom: 5px;
 }
 
-
 .contact-grid strong {
   color: var(--blue);
-
   overflow-wrap: anywhere;
 }
 
@@ -1001,7 +847,6 @@ footer {
   padding: 45px 20px;
 }
 
-
 .footer-business {
   color: var(--orange);
 
@@ -1012,21 +857,17 @@ footer {
   margin-bottom: 5px;
 }
 
-
 .footer-contact {
   margin: 20px 0;
 }
-
 
 .footer-contact a {
   color: var(--white);
 }
 
-
 .footer-contact a:hover {
   color: var(--orange);
 }
-
 
 .footer-copy {
   color: #aebcc6;
@@ -1034,39 +875,6 @@ footer {
   font-size: 13px;
 
   margin-top: 20px;
-}
-
-
-/* FIXED MOBILE CALL BUTTON */
-
-body::after {
-  content: "📞 Call 07873 149114";
-
-  display: none;
-
-  position: fixed;
-
-  left: 15px;
-  right: 15px;
-
-  bottom: 15px;
-
-  background: var(--orange);
-
-  color: var(--white);
-
-  text-align: center;
-
-  padding: 14px;
-
-  border-radius: 10px;
-
-  font-weight: 800;
-
-  box-shadow:
-    0 5px 20px rgba(0, 0, 0, 0.2);
-
-  z-index: 9999;
 }
 
 
@@ -1078,23 +886,18 @@ body::after {
     grid-template-columns: repeat(2, 1fr);
   }
 
-
   .why-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
 
   .areas-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-
   .contact-grid {
     grid-template-columns: 1fr;
-
     max-width: 600px;
   }
-
 }
 
 
@@ -1102,34 +905,26 @@ body::after {
 
 @media (max-width: 700px) {
 
-  /*
-    Header remains FIXED.
-    Do not change this to sticky.
-  */
+  /* Header scrolls normally on mobile too */
 
   header {
-    position: fixed;
-
-    top: 0;
-    left: 0;
+    position: relative;
+    top: auto;
+    left: auto;
     width: 100%;
   }
-
 
   .nav {
     padding: 10px 15px;
   }
 
-
   .brand img {
     width: 145px;
   }
 
-
   .menu-button {
     display: block;
   }
-
 
   .nav-links {
     display: none;
@@ -1155,36 +950,29 @@ body::after {
       0 8px 20px rgba(0, 0, 0, 0.1);
   }
 
-
   .nav-links.show {
     display: flex;
   }
-
 
   .nav-links a {
     text-align: center;
   }
 
-
   .hero {
     padding: 65px 18px 55px;
   }
-
 
   .hero h1 {
     font-size: 43px;
   }
 
-
   .hero h2 {
     font-size: 23px;
   }
 
-
   .hero p {
     font-size: 16px;
   }
-
 
   .trust-points {
     grid-template-columns: 1fr;
@@ -1194,16 +982,13 @@ body::after {
     margin-top: 30px;
   }
 
-
   .cards {
     grid-template-columns: 1fr;
   }
 
-
   .why-grid {
     grid-template-columns: 1fr;
   }
-
 
   .areas-grid {
     grid-template-columns: 1fr 1fr;
@@ -1211,11 +996,9 @@ body::after {
     gap: 12px;
   }
 
-
   .area-card {
     padding: 18px 10px;
   }
-
 
   .split {
     grid-template-columns: 1fr;
@@ -1223,11 +1006,9 @@ body::after {
     gap: 25px;
   }
 
-
   .section {
     padding: 60px 16px;
   }
-
 
   .why-us,
   .areas-section,
@@ -1236,30 +1017,9 @@ body::after {
     padding: 60px 16px;
   }
 
-
   .reviews form {
     padding: 20px;
   }
-
-
-  /*
-    Space at bottom so the fixed
-    phone button doesn't cover content.
-  */
-
-  body {
-    padding-bottom: 85px;
-  }
-
-
-  /*
-    Shows the fixed phone button.
-  */
-
-  body::after {
-    display: block;
-  }
-
 }
 
 
@@ -1271,24 +1031,19 @@ body::after {
     font-size: 38px;
   }
 
-
   .buttons,
   .quote-buttons {
     flex-direction: column;
   }
 
-
   .button {
     width: 100%;
-
     text-align: center;
   }
-
 
   .areas-grid {
     grid-template-columns: 1fr;
   }
-
 
   .rating-options {
     display: grid;
@@ -1296,11 +1051,9 @@ body::after {
     grid-template-columns: repeat(5, 1fr);
   }
 
-
   .rating-options label {
     justify-content: center;
 
     padding: 8px 4px;
   }
-
 }

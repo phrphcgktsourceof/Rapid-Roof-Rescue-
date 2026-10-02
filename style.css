@@ -29,6 +29,9 @@ body {
   background: var(--light);
   color: var(--text);
   line-height: 1.6;
+
+  /* Keeps the fixed header from covering the top of the page */
+  padding-top: 90px;
 }
 
 
@@ -48,9 +51,14 @@ a {
 header {
   background: var(--white);
   border-bottom: 3px solid var(--orange);
-  position: sticky;
+
+  /* STAYS AT THE TOP WHEN SCROLLING */
+  position: fixed;
   top: 0;
-  z-index: 1000;
+  left: 0;
+  width: 100%;
+
+  z-index: 10000;
 }
 
 
@@ -108,12 +116,17 @@ header {
 
 .menu-button {
   display: none;
+
   border: none;
   background: var(--blue);
   color: var(--white);
+
   font-size: 24px;
+
   border-radius: 8px;
+
   padding: 8px 12px;
+
   cursor: pointer;
 }
 
@@ -128,7 +141,9 @@ header {
     );
 
   color: var(--white);
+
   padding: 90px 20px 70px;
+
   text-align: center;
 }
 
@@ -141,9 +156,12 @@ header {
 
 .eyebrow {
   color: var(--orange);
+
   font-weight: 800;
   font-size: 13px;
+
   letter-spacing: 1.5px;
+
   margin-bottom: 10px;
 }
 
@@ -156,36 +174,46 @@ header {
 
 .hero h1 {
   font-size: clamp(42px, 7vw, 72px);
+
   line-height: 1.05;
+
   margin-bottom: 12px;
 }
 
 
 .hero h2 {
   font-size: clamp(22px, 4vw, 34px);
+
   margin-bottom: 20px;
 }
 
 
 .hero p {
   max-width: 720px;
+
   margin: 0 auto 25px;
+
   font-size: 18px;
 }
 
 
 .emergency-banner {
   display: inline-flex;
+
   flex-direction: column;
+
   gap: 2px;
 
   background: var(--orange);
+
   padding: 14px 22px;
+
   border-radius: 10px;
 
   margin-bottom: 25px;
 
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -204,19 +232,27 @@ header {
 .buttons,
 .quote-buttons {
   display: flex;
+
   justify-content: center;
   align-items: center;
+
   flex-wrap: wrap;
+
   gap: 12px;
 }
 
 
 .button {
   display: inline-block;
+
   padding: 13px 22px;
+
   border-radius: 9px;
+
   font-weight: 800;
+
   border: 2px solid transparent;
+
   transition: 0.2s ease;
 }
 
@@ -225,6 +261,8 @@ header {
   transform: translateY(-2px);
 }
 
+
+/* NORMAL ORANGE BUTTONS */
 
 .button.primary {
   background: var(--orange);
@@ -237,9 +275,29 @@ header {
 }
 
 
-.button.secondary {
+/* CALL NOW ON BLUE HERO = WHITE */
+
+.hero .button.primary {
   background: var(--white);
   color: var(--blue);
+
+  border-color: var(--white);
+}
+
+
+.hero .button.primary:hover {
+  background: var(--light);
+  color: var(--blue);
+}
+
+
+/* WHITE SECONDARY BUTTON */
+
+.button.secondary {
+  background: var(--white);
+
+  color: var(--blue);
+
   border-color: var(--white);
 }
 
@@ -253,24 +311,30 @@ header {
 
 .trust-points {
   max-width: 850px;
+
   margin: 45px auto 0;
 
   display: grid;
+
   grid-template-columns: repeat(3, 1fr);
+
   gap: 15px;
 }
 
 
 .trust-points div {
   background: var(--white);
+
   color: var(--text);
 
   border: 2px solid var(--border);
+
   border-radius: 14px;
 
   padding: 18px 12px;
 
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.08);
 }
 
 
@@ -282,12 +346,14 @@ header {
 
 .trust-points strong {
   color: var(--blue);
+
   font-size: 18px;
 }
 
 
 .trust-points span {
   font-size: 13px;
+
   color: var(--muted);
 }
 
@@ -296,7 +362,9 @@ header {
 
 .section {
   max-width: 1200px;
+
   margin: auto;
+
   padding: 80px 20px;
 }
 
@@ -307,7 +375,9 @@ header {
 .emergency-section h2,
 .quote-section h2 {
   font-size: clamp(30px, 5vw, 44px);
+
   line-height: 1.15;
+
   margin-bottom: 15px;
 }
 
@@ -316,7 +386,9 @@ header {
 .why-intro,
 .areas-intro {
   max-width: 700px;
+
   margin: 0 auto 35px;
+
   color: var(--muted);
 }
 
@@ -332,22 +404,28 @@ header {
 
 .cards {
   display: grid;
+
   grid-template-columns: repeat(3, 1fr);
+
   gap: 22px;
 }
 
 
 .service-card {
   position: relative;
+
   overflow: hidden;
 
   background: var(--white);
+
   border: 2px solid var(--border);
+
   border-radius: 14px;
 
   padding: 30px 24px;
 
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.08);
 
   transition:
     transform 0.25s ease,
@@ -360,10 +438,12 @@ header {
   content: "";
 
   position: absolute;
+
   top: 0;
   left: 0;
 
   width: 100%;
+
   height: 4px;
 
   background: var(--orange);
@@ -372,6 +452,7 @@ header {
 
 .service-card:hover {
   transform: translateY(-5px);
+
   border-color: var(--blue);
 
   box-shadow:
@@ -381,25 +462,30 @@ header {
 
 .icon {
   font-size: 38px;
+
   margin-bottom: 12px;
 }
 
 
 .service-card h3 {
   color: var(--blue);
+
   margin-bottom: 8px;
+
   font-size: 21px;
 }
 
 
 .service-card p {
   color: var(--muted);
+
   margin-bottom: 18px;
 }
 
 
 .service-link {
   color: var(--orange);
+
   font-weight: 800;
 }
 
@@ -408,32 +494,41 @@ header {
 
 .why-us {
   background: var(--white);
+
   text-align: center;
+
   padding: 80px 20px;
 }
 
 
 .why-grid {
   max-width: 1100px;
+
   margin: 40px auto;
 
   display: grid;
+
   grid-template-columns: repeat(4, 1fr);
+
   gap: 20px;
 }
 
 
 .why-card {
   position: relative;
+
   overflow: hidden;
 
   background: var(--white);
+
   border: 2px solid var(--border);
+
   border-radius: 14px;
 
   padding: 30px 20px;
 
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.08);
 
   transition: 0.25s ease;
 }
@@ -443,10 +538,12 @@ header {
   content: "";
 
   position: absolute;
+
   top: 0;
   left: 0;
 
   width: 100%;
+
   height: 4px;
 
   background: var(--orange);
@@ -455,6 +552,7 @@ header {
 
 .why-card:hover {
   transform: translateY(-5px);
+
   border-color: var(--blue);
 
   box-shadow:
@@ -464,12 +562,14 @@ header {
 
 .why-icon {
   font-size: 35px;
+
   margin-bottom: 10px;
 }
 
 
 .why-card h3 {
   color: var(--blue);
+
   margin-bottom: 8px;
 }
 
@@ -488,35 +588,45 @@ header {
 
 .areas-section {
   background: var(--light);
+
   text-align: center;
+
   padding: 80px 20px;
 }
 
 
 .areas-grid {
   max-width: 900px;
+
   margin: 40px auto 25px;
 
   display: grid;
+
   grid-template-columns: repeat(4, 1fr);
+
   gap: 15px;
 }
 
 
 .area-card {
   position: relative;
+
   overflow: hidden;
 
   background: var(--white);
+
   border: 2px solid var(--border);
+
   border-radius: 14px;
 
   padding: 20px 12px;
 
   font-weight: 700;
+
   color: var(--text);
 
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.08);
 
   transition:
     transform 0.25s ease,
@@ -529,10 +639,12 @@ header {
   content: "";
 
   position: absolute;
+
   top: 0;
   left: 0;
 
   width: 100%;
+
   height: 4px;
 
   background: var(--orange);
@@ -551,6 +663,7 @@ header {
 
 .areas-note {
   color: var(--muted);
+
   margin-bottom: 20px;
 }
 
@@ -559,6 +672,7 @@ header {
 
 .emergency-section {
   background: var(--blue);
+
   color: var(--white);
 
   text-align: center;
@@ -574,6 +688,7 @@ header {
 
 .emergency-section p {
   max-width: 700px;
+
   margin: 0 auto 25px;
 }
 
@@ -582,17 +697,22 @@ header {
 
 .dark {
   background: var(--dark);
+
   color: var(--white);
+
   max-width: none;
 }
 
 
 .split {
   max-width: 1100px;
+
   margin: auto;
 
   display: grid;
+
   grid-template-columns: 1fr 1fr;
+
   gap: 60px;
 
   align-items: center;
@@ -606,6 +726,7 @@ header {
 
 .dark p {
   color: #dce6ed;
+
   margin-bottom: 18px;
 }
 
@@ -619,16 +740,19 @@ header {
 
 .reviews form {
   max-width: 650px;
+
   margin: 35px auto 0;
 
   background: var(--white);
 
   border: 2px solid var(--border);
+
   border-radius: 14px;
 
   padding: 30px;
 
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.08);
 
   text-align: left;
 }
@@ -636,7 +760,9 @@ header {
 
 .reviews form > label {
   display: block;
+
   font-weight: 700;
+
   margin-bottom: 20px;
 }
 
@@ -648,6 +774,7 @@ header {
   margin-top: 7px;
 
   border: 2px solid var(--border);
+
   border-radius: 8px;
 
   padding: 12px;
@@ -659,6 +786,7 @@ header {
 .reviews input[type="text"]:focus,
 .reviews textarea:focus {
   outline: none;
+
   border-color: var(--blue);
 }
 
@@ -670,26 +798,33 @@ header {
 
 .rating-title {
   display: block;
+
   font-weight: 700;
+
   margin-bottom: 10px;
 }
 
 
 .rating-options {
   display: flex;
+
   gap: 8px;
+
   flex-wrap: wrap;
 }
 
 
 .rating-options label {
   display: flex;
+
   align-items: center;
+
   gap: 4px;
 
   background: var(--light);
 
   border: 1px solid var(--border);
+
   border-radius: 8px;
 
   padding: 8px 10px;
@@ -712,14 +847,17 @@ header {
   width: 100%;
 
   background: var(--orange);
+
   color: var(--white);
 
   border: none;
+
   border-radius: 9px;
 
   padding: 14px;
 
   font-size: 16px;
+
   font-weight: 800;
 
   cursor: pointer;
@@ -741,13 +879,16 @@ header {
   padding: 80px 20px;
 
   border-top: 1px solid var(--border);
+
   border-bottom: 1px solid var(--border);
 }
 
 
 .quote-section > p:not(.eyebrow) {
   max-width: 700px;
+
   margin: 0 auto 25px;
+
   color: var(--muted);
 }
 
@@ -761,17 +902,22 @@ header {
 
 .contact > p:not(.eyebrow) {
   max-width: 700px;
+
   margin: 0 auto 30px;
+
   color: var(--muted);
 }
 
 
 .contact-grid {
   max-width: 900px;
+
   margin: 35px auto;
 
   display: grid;
+
   grid-template-columns: repeat(3, 1fr);
+
   gap: 18px;
 }
 
@@ -779,16 +925,19 @@ header {
 .contact-grid > a,
 .contact-grid > div {
   position: relative;
+
   overflow: hidden;
 
   background: var(--white);
 
   border: 2px solid var(--border);
+
   border-radius: 14px;
 
   padding: 25px 15px;
 
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.08);
 }
 
 
@@ -797,10 +946,12 @@ header {
   content: "";
 
   position: absolute;
+
   top: 0;
   left: 0;
 
   width: 100%;
+
   height: 4px;
 
   background: var(--orange);
@@ -820,15 +971,20 @@ header {
 
 .contact-grid span {
   color: var(--orange);
+
   font-size: 12px;
+
   font-weight: 800;
+
   letter-spacing: 1px;
+
   margin-bottom: 5px;
 }
 
 
 .contact-grid strong {
   color: var(--blue);
+
   overflow-wrap: anywhere;
 }
 
@@ -837,6 +993,7 @@ header {
 
 footer {
   background: var(--dark);
+
   color: var(--white);
 
   text-align: center;
@@ -847,8 +1004,11 @@ footer {
 
 .footer-business {
   color: var(--orange);
+
   font-size: 24px;
+
   font-weight: 800;
+
   margin-bottom: 5px;
 }
 
@@ -870,12 +1030,14 @@ footer {
 
 .footer-copy {
   color: #aebcc6;
+
   font-size: 13px;
+
   margin-top: 20px;
 }
 
 
-/* MOBILE CALL BUTTON */
+/* FIXED MOBILE CALL BUTTON */
 
 body::after {
   content: "📞 Call 07873 149114";
@@ -883,11 +1045,14 @@ body::after {
   display: none;
 
   position: fixed;
+
   left: 15px;
   right: 15px;
+
   bottom: 15px;
 
   background: var(--orange);
+
   color: var(--white);
 
   text-align: center;
@@ -898,13 +1063,14 @@ body::after {
 
   font-weight: 800;
 
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.2);
 
-  z-index: 999;
+  z-index: 9999;
 }
 
 
-/* MOBILE */
+/* TABLET */
 
 @media (max-width: 900px) {
 
@@ -925,16 +1091,28 @@ body::after {
 
   .contact-grid {
     grid-template-columns: 1fr;
+
     max-width: 600px;
   }
 
 }
 
 
+/* MOBILE */
+
 @media (max-width: 700px) {
 
+  /*
+    Header remains FIXED.
+    Do not change this to sticky.
+  */
+
   header {
-    position: sticky;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 100%;
   }
 
 
@@ -959,6 +1137,7 @@ body::after {
     position: absolute;
 
     top: 100%;
+
     left: 0;
     right: 0;
 
@@ -969,9 +1148,11 @@ body::after {
     padding: 15px;
 
     flex-direction: column;
+
     align-items: stretch;
 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-shadow:
+      0 8px 20px rgba(0, 0, 0, 0.1);
   }
 
 
@@ -1007,7 +1188,9 @@ body::after {
 
   .trust-points {
     grid-template-columns: 1fr;
+
     gap: 10px;
+
     margin-top: 30px;
   }
 
@@ -1024,6 +1207,7 @@ body::after {
 
   .areas-grid {
     grid-template-columns: 1fr 1fr;
+
     gap: 12px;
   }
 
@@ -1035,6 +1219,7 @@ body::after {
 
   .split {
     grid-template-columns: 1fr;
+
     gap: 25px;
   }
 
@@ -1057,10 +1242,19 @@ body::after {
   }
 
 
+  /*
+    Space at bottom so the fixed
+    phone button doesn't cover content.
+  */
+
   body {
-    padding-bottom: 75px;
+    padding-bottom: 85px;
   }
 
+
+  /*
+    Shows the fixed phone button.
+  */
 
   body::after {
     display: block;
@@ -1068,6 +1262,8 @@ body::after {
 
 }
 
+
+/* SMALL PHONES */
 
 @media (max-width: 450px) {
 
@@ -1084,6 +1280,7 @@ body::after {
 
   .button {
     width: 100%;
+
     text-align: center;
   }
 
@@ -1095,12 +1292,14 @@ body::after {
 
   .rating-options {
     display: grid;
+
     grid-template-columns: repeat(5, 1fr);
   }
 
 
   .rating-options label {
     justify-content: center;
+
     padding: 8px 4px;
   }
 

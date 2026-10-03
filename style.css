@@ -30,6 +30,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -49,7 +50,9 @@ textarea {
 }
 
 
-/* HEADER */
+/* =========================================
+   HEADER
+========================================= */
 
 .site-header {
   position: sticky;
@@ -60,27 +63,31 @@ textarea {
 }
 
 .header-inner {
-  min-height: 70px;
+  min-height: 58px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: 20px;
 }
 
+/* SMALL LOGO */
+
 .brand img {
-  width: 92px;
+  width: 62px;
   height: auto;
   display: block;
 }
 
+/* DESKTOP MENU */
+
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 20px;
 }
 
 .main-nav a {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   color: var(--dark);
 }
@@ -92,36 +99,46 @@ textarea {
 .main-nav .nav-call {
   background: var(--orange);
   color: var(--white);
-  padding: 9px 16px;
-  border-radius: 5px;
+  padding: 7px 12px;
+  border-radius: 4px;
+  font-size: 12px;
 }
+
+/* SMALL MENU BUTTON */
 
 .menu-toggle {
   display: none;
-  width: 44px;
-  height: 42px;
+  width: 34px;
+  height: 32px;
+  padding: 5px;
   border: 1px solid var(--border);
   background: var(--white);
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
 .menu-toggle span {
   display: block;
-  width: 22px;
+  width: 17px;
   height: 2px;
   background: var(--dark);
-  margin: 5px auto;
+  margin: 3px auto;
 }
 
 
-/* HERO */
+/* =========================================
+   HERO
+========================================= */
 
 .hero {
   background:
-    linear-gradient(120deg, rgba(23, 33, 43, 0.98), rgba(5, 102, 159, 0.92));
+    linear-gradient(
+      120deg,
+      rgba(23, 33, 43, 0.98),
+      rgba(5, 102, 159, 0.92)
+    );
   color: var(--white);
-  padding: 105px 0 110px;
+  padding: 100px 0 105px;
 }
 
 .hero-content {
@@ -164,7 +181,9 @@ textarea {
 }
 
 
-/* BUTTONS */
+/* =========================================
+   BUTTONS
+========================================= */
 
 .button {
   display: inline-block;
@@ -199,7 +218,9 @@ textarea {
 }
 
 
-/* INTRO */
+/* =========================================
+   INTRO
+========================================= */
 
 .intro {
   padding: 80px 0;
@@ -223,7 +244,9 @@ textarea {
 }
 
 
-/* SECTION HEADINGS */
+/* =========================================
+   SECTION HEADINGS
+========================================= */
 
 .section-heading {
   max-width: 760px;
@@ -242,7 +265,9 @@ textarea {
 }
 
 
-/* SERVICES */
+/* =========================================
+   SERVICES
+========================================= */
 
 .services-section {
   background: var(--light);
@@ -306,7 +331,9 @@ textarea {
 }
 
 
-/* PHOTO GALLERY */
+/* =========================================
+   PHOTOS
+========================================= */
 
 .photo-grid {
   display: grid;
@@ -324,7 +351,9 @@ textarea {
 }
 
 
-/* ABOUT */
+/* =========================================
+   ABOUT
+========================================= */
 
 .about-section {
   padding: 90px 0;
@@ -361,7 +390,9 @@ textarea {
 }
 
 
-/* PROCESS */
+/* =========================================
+   PROCESS
+========================================= */
 
 .process-section {
   padding: 85px 0;
@@ -397,7 +428,9 @@ textarea {
 }
 
 
-/* REVIEWS */
+/* =========================================
+   REVIEWS
+========================================= */
 
 .reviews-section {
   padding: 90px 0;
@@ -436,7 +469,9 @@ textarea {
 }
 
 
-/* CONTACT CTA */
+/* =========================================
+   CONTACT CTA
+========================================= */
 
 .contact-cta {
   background: var(--blue);
@@ -466,7 +501,9 @@ textarea {
 }
 
 
-/* CONTACT */
+/* =========================================
+   CONTACT
+========================================= */
 
 .contact-section {
   padding: 85px 0;
@@ -503,7 +540,9 @@ textarea {
 }
 
 
-/* FOOTER */
+/* =========================================
+   FOOTER
+========================================= */
 
 .site-footer {
   background: var(--dark);
@@ -530,7 +569,9 @@ textarea {
 }
 
 
-/* MOBILE */
+/* =========================================
+   MOBILE
+========================================= */
 
 @media (max-width: 800px) {
 
@@ -538,27 +579,42 @@ textarea {
     width: min(100% - 28px, 1120px);
   }
 
+  /* SMALL HEADER */
+
   .header-inner {
-    min-height: 64px;
+    min-height: 54px;
   }
 
   .brand img {
-    width: 78px;
+    width: 55px;
   }
+
+  /* SMALL MENU BUTTON */
 
   .menu-toggle {
     display: block;
+    width: 32px;
+    height: 30px;
+    padding: 4px;
   }
+
+  .menu-toggle span {
+    width: 16px;
+    height: 2px;
+    margin: 3px auto;
+  }
+
+  /* MOBILE NAV */
 
   .main-nav {
     display: none;
     position: absolute;
-    top: 64px;
+    top: 54px;
     left: 0;
     right: 0;
     background: var(--white);
     border-bottom: 1px solid var(--border);
-    padding: 12px 20px 20px;
+    padding: 8px 18px 14px;
     flex-direction: column;
     align-items: stretch;
     gap: 0;
@@ -569,15 +625,18 @@ textarea {
   }
 
   .main-nav a {
-    padding: 13px 5px;
+    padding: 10px 5px;
+    font-size: 13px;
     border-bottom: 1px solid var(--border);
   }
 
   .main-nav .nav-call {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 8px;
     border: 0;
   }
+
+  /* HERO */
 
   .hero {
     padding: 75px 0 80px;
@@ -596,6 +655,8 @@ textarea {
     text-align: center;
   }
 
+  /* SECTIONS */
+
   .intro,
   .services-section,
   .about-section,
@@ -610,6 +671,8 @@ textarea {
     font-size: 30px;
   }
 
+  /* PHOTOS */
+
   .photo-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -618,6 +681,8 @@ textarea {
   .photo-grid img {
     height: 170px;
   }
+
+  /* OTHER SECTIONS */
 
   .about-grid,
   .process-grid,
@@ -644,6 +709,10 @@ textarea {
   }
 }
 
+
+/* =========================================
+   VERY SMALL PHONES
+========================================= */
 
 @media (max-width: 480px) {
 

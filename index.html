@@ -6,10 +6,20 @@
 
   <meta
     name="description"
-    content="Rapid Roof Rescue provides professional roof renewals and repairs, new roofs, rubber roofing, felt roofing, fascias, soffits and gutter repairs across the West Midlands."
+    content="Rapid Roof Rescue provides roof renewals, repairs, new roofs, rubber roofing, felt roofing, fascias, soffits and gutter repairs across the West Midlands."
   >
 
-  <meta name="theme-color" content="#087fc7">
+  <meta name="theme-color" content="#17212b">
+
+  <meta property="og:title" content="Rapid Roof Rescue | Roofing & Gutter Specialists">
+  <meta
+    property="og:description"
+    content="Professional roof renewals, repairs and roofing services across the West Midlands."
+  >
+  <meta
+    property="og:image"
+    content="https://phrphcgktsourceof.github.io/Rapid-Roof-Rescue-/logo.jpeg"
+  >
 
   <title>Rapid Roof Rescue | Roof Renewals & Repairs</title>
 
@@ -23,19 +33,20 @@
 
   <div class="header-inner">
 
-    <a href="#home" class="logo-link">
-      <img src="logo.jpeg" alt="Rapid Roof Rescue logo">
+    <a href="#top" class="logo-link">
+      <img src="logo.jpeg" alt="Rapid Roof Rescue">
     </a>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
-      ☰
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
 
     <nav class="main-nav" id="mainNav">
-      <a href="#home">Home</a>
       <a href="#services">Services</a>
+      <a href="#our-work">Our Work</a>
       <a href="#about">About</a>
-      <a href="#work">Our Work</a>
       <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
       <a href="tel:07873149114" class="nav-call">Call Us</a>
@@ -46,184 +57,181 @@
 </header>
 
 
-<!-- HERO -->
-<section class="hero" id="home">
+<main id="top">
 
-  <div class="hero-overlay"></div>
+  <!-- HERO -->
+  <section class="hero">
 
-  <div class="hero-content">
+    <div class="hero-inner">
 
-    <p class="eyebrow">WEST MIDLANDS ROOFING</p>
+      <div class="hero-content">
 
-    <h1>Rapid Roof Rescue</h1>
+        <p class="eyebrow">ROOFING SPECIALISTS • WEST MIDLANDS</p>
 
-    <h2>Roof Renewals & Repairs</h2>
+        <h1>
+          Roof Renewals<br>
+          <span>&amp; Repairs</span>
+        </h1>
 
-    <p class="hero-text">
-      Reliable roofing services for homes and properties across the West Midlands.
-      From roof renewals and repairs to fascias, soffits and gutters.
-    </p>
+        <p class="hero-text">
+          Reliable roofing services for homes and properties across the
+          West Midlands. From roof repairs and renewals to fascias,
+          soffits and guttering.
+        </p>
 
-    <div class="hero-buttons">
-      <a href="#services" class="button button-primary">
-        View Our Services
-      </a>
+        <div class="hero-buttons">
+          <a href="tel:07873149114" class="button button-primary">
+            Call 07873 149114
+          </a>
 
-      <a href="tel:07873149114" class="button button-secondary">
-        07873 149114
-      </a>
+          <a href="#our-work" class="button button-secondary">
+            View Our Work
+          </a>
+        </div>
+
+      </div>
+
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<!-- INTRO -->
-<section class="intro section">
+  <!-- QUICK INFO BAR -->
+  <section class="info-bar">
 
-  <div class="container intro-content">
+    <div class="info-inner">
 
-    <p class="section-label">ROOFING YOU CAN RELY ON</p>
+      <div>
+        <strong>West Midlands</strong>
+        <span>Local roofing services</span>
+      </div>
 
-    <h2>Professional roofing services across the West Midlands</h2>
+      <div>
+        <strong>Roof Renewals</strong>
+        <span>Professional workmanship</span>
+      </div>
 
-    <p>
-      Rapid Roof Rescue provides dependable roofing services for homeowners
-      and properties throughout the West Midlands. We offer roof renewals and
-      repairs, new roof installations, rubber and felt roofing, fascias,
-      soffits and gutter repairs.
-    </p>
+      <div>
+        <strong>Roof Repairs</strong>
+        <span>Reliable repair solutions</span>
+      </div>
 
-  </div>
+      <div>
+        <strong>Free Enquiries</strong>
+        <span>Call us to discuss your roof</span>
+      </div>
 
-</section>
+    </div>
+
+  </section>
 
 
-<!-- SERVICES -->
-<section class="section services-section" id="services">
-
-  <div class="container">
+  <!-- SERVICES -->
+  <section class="section services-section" id="services">
 
     <div class="section-heading">
 
-      <p class="section-label">WHAT WE DO</p>
+      <p class="eyebrow">WHAT WE DO</p>
 
-      <h2>Our Services</h2>
+      <h2>Our Roofing Services</h2>
 
       <p>
-        Professional roofing solutions tailored to your property.
+        A range of roofing and exterior services carried out for
+        properties across the West Midlands.
       </p>
 
     </div>
 
 
-    <div class="services-grid">
+    <div class="services-list">
 
-      <article class="service-card">
-
+      <article class="service-item">
         <div class="service-number">01</div>
-
-        <h3>Roof Renewals & Repairs</h3>
-
-        <p>
-          Roof renewals and repairs to help protect your property and keep
-          your roof performing as it should.
-        </p>
-
+        <div>
+          <h3>Roof Renewals &amp; Repairs</h3>
+          <p>
+            Roof renewals, repairs and maintenance to help keep your
+            property protected and weatherproof.
+          </p>
+        </div>
       </article>
 
 
-      <article class="service-card">
-
+      <article class="service-item">
         <div class="service-number">02</div>
-
-        <h3>New Roof Installations</h3>
-
-        <p>
-          Complete new roof installations with a professional finish and
-          attention to detail.
-        </p>
-
+        <div>
+          <h3>New Roof Installations</h3>
+          <p>
+            New roofing installations designed to provide a durable,
+            reliable finish for your property.
+          </p>
+        </div>
       </article>
 
 
-      <article class="service-card">
-
+      <article class="service-item">
         <div class="service-number">03</div>
-
-        <h3>Rubber Roofing</h3>
-
-        <p>
-          Durable rubber roofing solutions suitable for a range of flat
-          roofing applications.
-        </p>
-
+        <div>
+          <h3>Rubber Roofing</h3>
+          <p>
+            Rubber roofing solutions suitable for a range of flat and
+            low-pitched roofing applications.
+          </p>
+        </div>
       </article>
 
 
-      <article class="service-card">
-
+      <article class="service-item">
         <div class="service-number">04</div>
-
-        <h3>Felt Roofing</h3>
-
-        <p>
-          Felt roofing solutions for flat roofs, repairs and replacement
-          roofing work.
-        </p>
-
+        <div>
+          <h3>Felt Roofing</h3>
+          <p>
+            Felt roofing work for flat roofs, including repairs,
+            renewals and maintenance.
+          </p>
+        </div>
       </article>
 
 
-      <article class="service-card">
-
+      <article class="service-item">
         <div class="service-number">05</div>
-
-        <h3>Fascias & Soffits</h3>
-
-        <p>
-          Renewal and repair of damaged or worn fascias and soffits to keep
-          your roofline looking clean and protected.
-        </p>
-
+        <div>
+          <h3>Fascias &amp; Soffits</h3>
+          <p>
+            Fascia and soffit repairs and renewals to protect your
+            roofline and improve the finish of your property.
+          </p>
+        </div>
       </article>
 
 
-      <article class="service-card">
-
+      <article class="service-item">
         <div class="service-number">06</div>
-
-        <h3>Gutter Repairs</h3>
-
-        <p>
-          Gutter repairs and maintenance to help prevent leaks and keep
-          rainwater flowing away from your property.
-        </p>
-
+        <div>
+          <h3>Gutter Repairs</h3>
+          <p>
+            Gutter repairs and maintenance to help keep rainwater
+            flowing correctly away from your property.
+          </p>
+        </div>
       </article>
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<!-- OUR WORK -->
-<section class="section work-section" id="work">
-
-  <div class="container">
+  <!-- OUR WORK -->
+  <section class="section work-section" id="our-work">
 
     <div class="section-heading">
 
-      <p class="section-label">OUR WORK</p>
+      <p class="eyebrow">OUR WORK</p>
 
       <h2>Recent Roofing Work</h2>
 
       <p>
-        Take a look at some of the roofing and property work completed by
-        Rapid Roof Rescue.
+        Take a look at examples of our roofing and exterior work.
       </p>
 
     </div>
@@ -231,315 +239,262 @@
 
     <div class="work-gallery">
 
-      <img src="IMG_9645.jpeg" alt="Roofing work completed by Rapid Roof Rescue">
-      <img src="IMG_9646.jpeg" alt="Roofing work completed by Rapid Roof Rescue">
-      <img src="IMG_9647.jpeg" alt="Roofing work completed by Rapid Roof Rescue">
-      <img src="IMG_9648.jpeg" alt="Roofing work completed by Rapid Roof Rescue">
-      <img src="IMG_9649.jpeg" alt="Roofing work completed by Rapid Roof Rescue">
-      <img src="IMG_9650.jpeg" alt="Roofing work completed by Rapid Roof Rescue">
-      <img src="IMG_9651.jpeg" alt="Roofing work completed by Rapid Roof Rescue">
-      <img src="IMG_9652.jpeg" alt="Roofing work completed by Rapid Roof Rescue">
+      <div class="work-image">
+        <img src="IMG_9645.jpeg" alt="Recent roofing work">
+      </div>
 
-      <img src="IMG_9259.jpeg" alt="Fascia and soffit work completed by Rapid Roof Rescue">
-      <img src="IMG_9260.jpeg" alt="Fascia and soffit work completed by Rapid Roof Rescue">
-      <img src="IMG_9263.jpeg" alt="Fascia and soffit work completed by Rapid Roof Rescue">
-      <img src="IMG_9264.jpeg" alt="Fascia and soffit work completed by Rapid Roof Rescue">
-      <img src="IMG_9266.jpeg" alt="Fascia and soffit work completed by Rapid Roof Rescue">
-      <img src="IMG_9267.jpeg" alt="Fascia and soffit work completed by Rapid Roof Rescue">
+      <div class="work-image">
+        <img src="IMG_9646.jpeg" alt="Recent roofing work">
+      </div>
+
+      <div class="work-image">
+        <img src="IMG_9647.jpeg" alt="Recent roofing work">
+      </div>
+
+      <div class="work-image">
+        <img src="IMG_9648.jpeg" alt="Recent roofing work">
+      </div>
+
+      <div class="work-image">
+        <img src="IMG_9649.jpeg" alt="Recent roofing work">
+      </div>
+
+      <div class="work-image">
+        <img src="IMG_9650.jpeg" alt="Recent roofing work">
+      </div>
+
+      <div class="work-image">
+        <img src="IMG_9651.jpeg" alt="Recent roofing work">
+      </div>
+
+      <div class="work-image">
+        <img src="IMG_9652.jpeg" alt="Recent roofing work">
+      </div>
+
+      <div class="work-image">
+        <img src="IMG_9259.jpeg" alt="Fascia and soffit work">
+      </div>
+
+      <div class="work-image">
+        <img src="IMG_9260.jpeg" alt="Fascia and soffit work">
+      </div>
+
+      <div class="work-image">
+        <img src="IMG_9263.jpeg" alt="Fascia and soffit work">
+      </div>
+
+      <div class="work-image">
+        <img src="IMG_9264.jpeg" alt="Fascia and soffit work">
+      </div>
+
+      <div class="work-image">
+        <img src="IMG_9266.jpeg" alt="Fascia and soffit work">
+      </div>
+
+      <div class="work-image">
+        <img src="IMG_9267.jpeg" alt="Fascia and soffit work">
+      </div>
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<!-- ABOUT -->
-<section class="section about-section" id="about">
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
 
-  <div class="container about-grid">
+    <div class="about-inner">
 
-    <div>
+      <div class="about-label">
+        <p class="eyebrow">ABOUT RAPID ROOF RESCUE</p>
+      </div>
 
-      <p class="section-label">ABOUT US</p>
+      <div class="about-content">
 
-      <h2>Roofing services you can depend on</h2>
+        <h2>Reliable Roofing Across the West Midlands</h2>
 
-      <p>
-        Rapid Roof Rescue provides roofing and roofline services throughout
-        the West Midlands. We focus on reliable workmanship, clear
-        communication and keeping properties protected.
-      </p>
+        <p>
+          Rapid Roof Rescue provides roofing services for homeowners
+          and properties throughout the West Midlands.
+        </p>
 
-      <p>
-        Whether you need a roof renewed, a repair carried out or work to
-        your fascias, soffits or gutters, we are here to help.
-      </p>
+        <p>
+          We cover roof renewals, repairs, new roofs, flat roofing,
+          fascias, soffits and guttering, with a focus on reliable
+          workmanship and a professional finish.
+        </p>
 
-    </div>
-
-
-    <div class="area-box">
-
-      <h3>Areas We Cover</h3>
-
-      <div class="area-list">
-
-        <span>Dudley</span>
-        <span>Wolverhampton</span>
-        <span>Walsall</span>
-        <span>Birmingham</span>
-        <span>Stourbridge</span>
-        <span>Halesowen</span>
-        <span>Tipton</span>
-        <span>West Bromwich</span>
+        <a href="tel:07873149114" class="text-link">
+          Speak to us about your roofing requirements →
+        </a>
 
       </div>
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<!-- WHY CHOOSE US -->
-<section class="section reasons-section">
-
-  <div class="container">
+  <!-- REVIEWS -->
+  <section class="section reviews-section" id="reviews">
 
     <div class="section-heading">
 
-      <p class="section-label">WHY RAPID ROOF RESCUE</p>
+      <p class="eyebrow">CUSTOMER FEEDBACK</p>
 
-      <h2>A straightforward roofing service</h2>
-
-    </div>
-
-
-    <div class="reasons-grid">
-
-      <div class="reason">
-        <span>01</span>
-        <h3>Professional Service</h3>
-        <p>
-          A straightforward and professional approach from initial contact
-          through to completion.
-        </p>
-      </div>
-
-      <div class="reason">
-        <span>02</span>
-        <h3>Quality Workmanship</h3>
-        <p>
-          Careful attention to detail across roofing and roofline work.
-        </p>
-      </div>
-
-      <div class="reason">
-        <span>03</span>
-        <h3>West Midlands</h3>
-        <p>
-          Serving homeowners and properties across the West Midlands area.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- REVIEWS -->
-<section class="section reviews-section" id="reviews">
-
-  <div class="container reviews-container">
-
-    <div class="section-heading">
-
-      <p class="section-label">CUSTOMER REVIEWS</p>
-
-      <h2>Tell us about your experience</h2>
+      <h2>Customer Reviews</h2>
 
       <p>
-        We value customer feedback and would appreciate you taking the time
-        to leave a review.
+        If Rapid Roof Rescue has completed work for you, we'd love
+        to hear about your experience.
       </p>
 
     </div>
 
 
-    <form
-      class="review-form"
-      action="https://formspree.io/f/mqpawypw"
-      method="POST"
-    >
+    <div class="review-form-wrapper">
 
-      <div class="form-row">
+      <form
+        action="https://formspree.io/f/mqpawypw"
+        method="POST"
+        class="review-form"
+      >
 
-        <div class="form-group">
+        <div class="form-row">
 
-          <label for="review-name">Your Name</label>
+          <div class="form-group">
+            <label for="review-name">Your Name</label>
+            <input
+              type="text"
+              id="review-name"
+              name="name"
+              placeholder="Your name"
+              required
+            >
+          </div>
 
-          <input
-            type="text"
-            id="review-name"
-            name="name"
-            placeholder="Your name"
-            required
-          >
 
-        </div>
-
-
-        <div class="form-group">
-
-          <label for="rating">Your Rating</label>
-
-          <div class="select-wrap">
+          <div class="form-group">
+            <label for="rating">Your Rating</label>
 
             <select id="rating" name="rating" required>
-
               <option value="" disabled selected>
-                Choose your rating
+                Select a rating
               </option>
-
-              <option value="5">★★★★★ — 5 Stars</option>
-              <option value="4">★★★★☆ — 4 Stars</option>
-              <option value="3">★★★☆☆ — 3 Stars</option>
-              <option value="2">★★☆☆☆ — 2 Stars</option>
-              <option value="1">★☆☆☆☆ — 1 Star</option>
-
+              <option value="5 Stars">★★★★★ 5 Stars</option>
+              <option value="4 Stars">★★★★☆ 4 Stars</option>
+              <option value="3 Stars">★★★☆☆ 3 Stars</option>
+              <option value="2 Stars">★★☆☆☆ 2 Stars</option>
+              <option value="1 Star">★☆☆☆☆ 1 Star</option>
             </select>
 
           </div>
 
         </div>
 
-      </div>
+
+        <div class="form-group">
+
+          <label for="review">Your Review</label>
+
+          <textarea
+            id="review"
+            name="review"
+            rows="6"
+            placeholder="Tell us about your experience..."
+            required
+          ></textarea>
+
+        </div>
 
 
-      <div class="form-group">
+        <button type="submit" class="button button-primary">
+          Submit Review
+        </button>
 
-        <label for="review-message">Your Review</label>
-
-        <textarea
-          id="review-message"
-          name="review"
-          rows="6"
-          placeholder="Tell us about your experience..."
-          required
-        ></textarea>
-
-      </div>
-
-
-      <button type="submit" class="button button-primary">
-        Submit Review
-      </button>
-
-    </form>
-
-  </div>
-
-</section>
-
-
-<!-- CONTACT CTA -->
-<section class="contact-cta">
-
-  <div class="container contact-cta-inner">
-
-    <div>
-
-      <p class="section-label">NEED ROOFING WORK?</p>
-
-      <h2>Get in touch with Rapid Roof Rescue</h2>
-
-      <p>
-        Contact us to discuss your roofing or roofline requirements.
-      </p>
+      </form>
 
     </div>
 
-    <a href="tel:07873149114" class="button button-light">
-      Call 07873 149114
-    </a>
-
-  </div>
-
-</section>
+  </section>
 
 
-<!-- CONTACT -->
-<section class="section contact-section" id="contact">
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
 
-  <div class="container">
+    <div class="contact-inner">
 
-    <div class="section-heading">
+      <div class="contact-content">
 
-      <p class="section-label">CONTACT</p>
+        <p class="eyebrow">GET IN TOUCH</p>
 
-      <h2>Contact Rapid Roof Rescue</h2>
+        <h2>Need Roofing Work?</h2>
 
-    </div>
+        <p>
+          Contact Rapid Roof Rescue to discuss your roofing
+          requirements across the West Midlands.
+        </p>
 
-
-    <div class="contact-grid">
-
-      <a href="tel:07873149114" class="contact-card">
-
-        <span>PHONE</span>
-
-        <strong>07873 149114</strong>
-
-      </a>
+      </div>
 
 
-      <a href="mailto:ashleybreakwell343@gmail.com" class="contact-card">
+      <div class="contact-details">
 
-        <span>EMAIL</span>
+        <a href="tel:07873149114" class="contact-item">
+          <span>CALL</span>
+          <strong>07873 149114</strong>
+        </a>
 
-        <strong>ashleybreakwell343@gmail.com</strong>
-
-      </a>
-
-
-      <div class="contact-card">
-
-        <span>AREA</span>
-
-        <strong>West Midlands</strong>
+        <a
+          href="mailto:ashleybreakwell343@gmail.com"
+          class="contact-item"
+        >
+          <span>EMAIL</span>
+          <strong>ashleybreakwell343@gmail.com</strong>
+        </a>
 
       </div>
 
     </div>
 
-  </div>
+  </section>
 
-</section>
+</main>
 
 
 <!-- FOOTER -->
 <footer class="site-footer">
 
-  <div class="container footer-inner">
+  <div class="footer-inner">
 
     <div>
-
-      <strong>Rapid Roof Rescue</strong>
-
+      <img src="logo.jpeg" alt="Rapid Roof Rescue">
       <p>
-        Roof Renewals & Repairs across the West Midlands.
+        Roof renewals, repairs and roofing services across the
+        West Midlands.
       </p>
-
     </div>
 
-    <p>
-      © 2026 Rapid Roof Rescue. All rights reserved.
-    </p>
+    <div class="footer-links">
+      <a href="#services">Services</a>
+      <a href="#our-work">Our Work</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
 
+    <div class="footer-contact">
+      <a href="tel:07873149114">07873 149114</a>
+      <a href="mailto:ashleybreakwell343@gmail.com">
+        ashleybreakwell343@gmail.com
+      </a>
+    </div>
+
+  </div>
+
+
+  <div class="footer-bottom">
+    <p>© 2026 Rapid Roof Rescue. All rights reserved.</p>
   </div>
 
 </footer>
@@ -547,18 +502,22 @@
 
 <script>
 
-const menuToggle = document.getElementById("menuToggle");
-const mainNav = document.getElementById("mainNav");
+function toggleMenu() {
+  const nav = document.getElementById("mainNav");
+  nav.classList.toggle("show");
+}
 
-menuToggle.addEventListener("click", function () {
-  mainNav.classList.toggle("show");
-});
 
 document.querySelectorAll(".main-nav a").forEach(function(link) {
+
   link.addEventListener("click", function() {
-    mainNav.classList.remove("show");
+
+    document.getElementById("mainNav").classList.remove("show");
+
   });
+
 });
+
 
 </script>
 
